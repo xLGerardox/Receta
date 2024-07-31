@@ -18,9 +18,30 @@ class MenuRecetas
             int opcion;
             if (!int.TryParse(Console.ReadLine(), out opcion))
             {
-                Console.WriteLine("");
+                Console.WriteLine("Esa opción no está dentro del menú");
                 continue;
             }
+
+
+            switch (opcion)
+            {
+                case 1:
+                    AgregarReceta(coleccion);
+                    break;
+                case 2:
+                    BuscarRecetaPorNombre(coleccion);
+                    break;
+                case 3:
+                    coleccion.MostrarTodasLasRecetas();
+                    break;
+                case 4:
+                    return;
+                default:
+                    Console.WriteLine("Esa opción no está dentro del menú");
+                    break;
+            }
+
+
 
         }
     }

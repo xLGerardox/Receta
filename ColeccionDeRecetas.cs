@@ -21,6 +21,19 @@ namespace MenuReceta
             Console.WriteLine("Receta agregada.");
         }
 
+        public void BuscarRecetaPorNombre(string nombre)
+        {
+            foreach (var receta in recetas)
+            {
+                if (receta.Nombre.ToLower() == nombre.ToLower())
+                {
+                    Console.WriteLine(receta);
+                    return;
+                }
+            }
+            Console.WriteLine("Receta no encontrada.");
+        }
+
 
     }
 }
