@@ -40,9 +40,29 @@ class MenuRecetas
                     Console.WriteLine("Esa opción no está dentro del menú");
                     break;
             }
-
-
-
         }
     }
+
+    static void AgregarReceta(ColeccionDeRecetas coleccion)
+    {
+        Console.Write("Ingrese el nombre de la receta: ");
+        string nombre = Console.ReadLine();
+
+        Console.Write("Ingrese los ingredientes (separados por comas): ");
+        string ingredientes = Console.ReadLine();
+
+        Console.Write("Ingrese las instrucciones: ");
+        string instrucciones = Console.ReadLine();
+
+        Receta receta = new Receta(nombre, ingredientes, instrucciones);
+        coleccion.AgregarReceta(receta);
+    }
+
+    static void BuscarRecetaPorNombre(ColeccionDeRecetas coleccion)
+    {
+        Console.Write("Ingrese la receta que desea buscar: ");
+        string nombre = Console.ReadLine();
+        coleccion.BuscarRecetaPorNombre(nombre);
+    }
+
 }

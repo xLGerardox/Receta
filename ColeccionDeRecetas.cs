@@ -38,7 +38,7 @@ namespace MenuReceta
         {
             if (recetas.Count == 0)
             {
-                Console.WriteLine("No hay recetas en la colección.");
+                Console.WriteLine("No hay recetas que mostrar.");
             }
             else
             {
