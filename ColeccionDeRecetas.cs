@@ -34,6 +34,22 @@ namespace MenuReceta
             Console.WriteLine("Receta no encontrada.");
         }
 
+        public void MostrarTodasLasRecetas()
+        {
+            if (recetas.Count == 0)
+            {
+                Console.WriteLine("No hay recetas en la colección.");
+            }
+            else
+            {
+                foreach (var receta in recetas)
+                {
+                    Console.WriteLine(receta);
+                    Console.WriteLine("------------------------------");
+                }
+            }
+        }
+
 
     }
 }
