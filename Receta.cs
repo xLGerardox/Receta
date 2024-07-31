@@ -19,5 +19,9 @@ namespace MenuReceta
             Instrucciones = instrucciones;
         }
 
+        public override string ToString()
+        {
+            return $"Nombre: {Nombre}\nIngredientes: {Ingredientes}\nInstrucciones: {Instrucciones}";
+        }
     }
 }
