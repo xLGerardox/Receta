@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace MenuReceta
 {
-    internal class ColeccionDeRecetas
+    public class ColeccionDeRecetas
     {
+        private List<Receta> recetas;
+
+        public ColeccionDeRecetas()
+        {
+            recetas = new List<Receta>();
+        }
+
+        public void AgregarReceta(Receta receta)
+        {
+            recetas.Add(receta);
+            Console.WriteLine("Receta agregada con éxito.");
+        }
+
+
     }
 }
