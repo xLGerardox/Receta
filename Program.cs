@@ -18,7 +18,7 @@ class MenuRecetas
             int opcion;
             if (!int.TryParse(Console.ReadLine(), out opcion))
             {
-                Console.WriteLine("Opción no válida. Intente nuevamente.");
+                Console.WriteLine("");
                 continue;
             }
 

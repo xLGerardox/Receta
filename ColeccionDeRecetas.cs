@@ -18,7 +18,7 @@ namespace MenuReceta
         public void AgregarReceta(Receta receta)
         {
             recetas.Add(receta);
-            Console.WriteLine("Receta agregada con éxito.");
+            Console.WriteLine("Receta agregada.");
         }
 
 
